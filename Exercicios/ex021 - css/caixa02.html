@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif ;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(6, 27, 6);
+            padding: 3px;
+            box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    
+        }
+        nav > a { /* Todo link dentro do nav */
+            text-decoration: none; /* tira a decoração*/
+            color: white; /* cor da fonte */
+            font-weight: bold; /**/
+            margin-right: 30px; /*Separa os links*/
+            
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;  /* Raio da borda */
+            box-shadow: 4px 4px 9px 0px rgba(0 ,0 ,0, 0.384);
+        }
+        nav > a:hover{ /* Quando passar o mouse encima*/
+                text-decoration: underline;
+        }
+        article{
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+        }
+        footer{
+            background-color: darkblue;
+            text-align: center;
+            color: white;
+            padding: 4px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola{
+                height: 100px;
+                width: 100px;
+                margin: 10px;
+                background-color: white;
+                border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- Cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!--Menu de navegação-->
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+
+    <main> <!-- Conteudo principal-->
+       <section id=assunto>
+        <p> Esportes Politicas Tecnologia</p>
+       </section>
+       <section id=noticias>
+           <article>
+               <h2>Noticias sobre o Brasil</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rerum accusamus voluptatum ea voluptates nostrum ipsum qui error itaque veniam recusandae vero architecto ipsa voluptate beatae, similique tempore iure facere.</p>
+               <aside>
+                   <p>Artigo escrito por José da Silva</p>
+               </aside>
+           </article>
+
+       </section>
+    </main>
+
+    <footer> <!--rodapé-->
+        <p>&#169; Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

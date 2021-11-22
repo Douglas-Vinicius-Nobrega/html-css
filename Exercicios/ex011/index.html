@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinãmica</h1>
+    <p>Tente abrir essemsite em vários dispositivos diferentes ou simplesmente aumento e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="imagem flexível">
+    </picture>
+
+    <h1>reproduzindo audio</h1>
+    <p>Vamos reproduzir áudio em HTML5</p>
+    <audio src="media/audiojs.mp3" controls ></audio>  
+
+    <audio preload="metadata" controls>
+        <source src="media/audio2.mp3" type="audio/mpeg">
+    <!--<source src="media/audio2.ogg" type="audio/ogg">
+        <source src="media/audio2.wav" type="audio/wav"> evitar usar wav -->
+    </audio> 
+    <p>Infelismente seu navegador não é consegue reproduzir audio.
+        <a href="media/audiojs.mp3">Clique aqui para baixar o arquivo</a>
+    </p>
+    <p>
+        Para baixar o segundo arquivo <a href="media/audio2.mp3"> Clique aqui</a>
+    </p>
+</body>
+</html>

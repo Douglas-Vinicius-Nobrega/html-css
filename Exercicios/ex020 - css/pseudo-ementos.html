@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = clildren
+        
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(170, 81, 81);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited { /* se for visitado */
+            color: darkblue;
+        }
+        a:hover{ /* quando passar o mouse encima, ele fica sublinhado e preto*/
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{ /* quando clico nela */
+            color: yellow;
+        }
+        a::after{ /* depos de todos os links, eu vou avisar que é um link*/
+            content: ' [⇒] ';
+            text-decoration: none; /*sem negrito*/
+            font-weight: normal;  /* espessura da font*/
+            color: darkgray;
+        }
+        .especial {
+            background-color: rgb(230, 163, 163);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <a href="">
+            <li>Repósitório Github</li>
+        </a>
+        <a href="">
+            <li>Canal do Youtube</li>
+        </a>
+        <a href="" target="_blank" class="especial">
+            <li>Site de curiosidade</li>
+        </a>
+    </ul>
+    
+</body>
+</html>
